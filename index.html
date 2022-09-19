@@ -15,6 +15,28 @@
 
 <body>
    <h1>Hola soy una pagina web</h1>
+      <h1 style="color:green;">
+            GeeksforGeeks
+        </h1>
+    <h2>
+            Window confirm() Method
+        </h2>
+ 
+    <button onclick="geek()">Click me!</button>
+ 
+    <p id="g"></p>
+     <script>
+        function geek() {
+            var doc;
+            var result = confirm("Press a button!");
+            if (result == true) {
+                doc = "OK was pressed.";
+            } else {
+                doc = "Cancel was pressed.";
+            }
+            document.getElementById("g").innerHTML = doc;
+        }
+    </script>
 </body>
 
 </html>
